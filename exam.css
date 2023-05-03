@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a,
+button,
+img {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+/**/
+.nav {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.nav__logo {
+  display: flex;
+  margin-top: 48px;
+}
+.nav__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin-top: -70px;
+  
+}
+.nav__item--link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+ .nav__item--link-menu {
+  color: #274C5B;
+}
+.nav__item--link-menu:hover {
+  color: #7EB693;
+}
+.nav__item--link:first-child {
+  margin-left: 5px;
+}
+.nav__item--link:nth-child(4) {
+  margin-right: 23px;
+}
+.nav__item--link:nth-child(5) {
+  margin-right: 335px;
+}
+.basket {
+  margin-top: 5px;
+}
+/**/
+.header {
+  width: 100%;
+  height: 913px;
+  background: url('../img(2)/1.png')center no-repeat;
+  background-size: cover;
+  margin-bottom: 140px;
+}
+.header__block {
+  padding-top: 220px;
+  padding-bottom: 400px;
+}
+.header__title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+}
+.header__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.header__button {
+  background: url('../img(2)/button.png')center no-repeat;
+  width: 219px;
+  height: 82px;
+  border: none;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 32px;
+letter-spacing: 0.36px;
+text-transform: capitalize;
+color: #274C5B;
+margin-bottom: 250px;
+text-align: start;
+padding-left: 32px;
+}
