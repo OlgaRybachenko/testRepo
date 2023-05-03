@@ -62,7 +62,6 @@ body {
   align-items: center;
   gap: 40px;
   margin-top: -70px;
-  
 }
 .nav__item--link {
   display: flex;
@@ -70,7 +69,6 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
 }
-
  .nav__item--link-menu {
   color: #274C5B;
 }
@@ -128,14 +126,186 @@ body {
   height: 82px;
   border: none;
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 32px;
-letter-spacing: 0.36px;
-text-transform: capitalize;
-color: #274C5B;
-margin-bottom: 250px;
-text-align: start;
-padding-left: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+  margin-bottom: 250px;
+  text-align: start;
+  padding-left: 32px;
+}
+/**/
+.content {
+  width: 100%;
+  height: 100%;
+}
+.content__block {
+  padding: 0 0 130px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content__left {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.content__left--title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 108px;
+  left: 55px;
+}
+.content__left--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.36px;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 170px;
+  left: 55px;
+}
+.content__right {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 23px;
+}
+.content__right--title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  color: #7EB693;
+  position: absolute;
+  z-index: 1;
+  top: 108px;
+  left: 55px;
+}
+.content__right--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  position: absolute;
+  z-index: 1;
+  top: 170px;
+  left: 55px;
+}
+/**/
+.citrus {
+  background-color: #F9F8F8;
+  width: 100%;
+  height: 100%;
+  padding: 180px 0 140px 20px;
+
+}
+.citrus__citrus {
+  height: 642px;
+  background: url('../img(2)/citr.png') no-repeat, #f9f8f8;
+  width: 100%;
+  background-size: 50%, 50%;
+  margin-left: -20px;
+  display: grid;
+  grid-template: 1fr 1fr;
+}
+.citrus__con {
+  margin-left: auto;
+  margin-top: -50px;
+}
+.citrus__con--title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+}
+.citrus__con--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+  margin-bottom: 25px;
+}
+.citrus__con--item {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-bottom: 50px;
+}
+.citrus__con--article-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-left: 122px;
+  margin-top: -110px;
+  margin-bottom: 10px;
+}
+.citrus__con--article-item {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-left: 122px;
+  margin-bottom: 20px;
+}
+.citrus__con--article-image {
+  margin-top: 10px;
+}
+.citrus__con--article-image:last-child {
+  margin-top: 20px;
+}
+.citrus__button {
+  background: url('../img(2)/button2.png')center no-repeat; 
+  width: 199px;
+  height: 82px;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: left;
+  padding-left: 35px;
+  margin-top: 22px;
+  margin-right: 5px;
 }
