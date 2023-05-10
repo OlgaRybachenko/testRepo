@@ -47,10 +47,23 @@ body {
   display: flex;
   margin-top: 48px;
 }
-#burger,
-[for=burger] {
-  display: none;
-}
+.burger-menu {
+  position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 40px;
+   display: none;
+  }
+  input[type = checkbox] {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 40px;
+    z-index: 1;
+    display: none;
+  }  
 .nav__item {
   display: flex;
   flex-wrap: wrap;
