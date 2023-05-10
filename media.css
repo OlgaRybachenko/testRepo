@@ -1,0 +1,20 @@
+@media (max-width:1280px) {
+  .container {
+    width: 80%;
+  }
+  #burger,
+  [for=burger] {
+    display: block;
+    border: 1px solid #000;
+    position: fixed;
+    z-index: 10;
+    width: 30px;
+    text-align: center;
+    /*left: auto;*/
+    right: 20px;
+    top: 10px;
+  }
+  .nav__item {
+    display: none;
+  }
+}

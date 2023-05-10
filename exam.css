@@ -47,6 +47,10 @@ body {
   display: flex;
   margin-top: 48px;
 }
+#burger,
+[for=burger] {
+  display: none;
+}
 .nav__item {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +66,7 @@ body {
   align-items: center;
   gap: 40px;
   margin-top: -70px;
+
 }
 .nav__item--link {
   display: flex;
@@ -71,6 +76,7 @@ body {
 }
  .nav__item--link-menu {
   color: #274C5B;
+  margin-top: 15px;
 }
 .nav__item--link-menu:hover {
   color: #7EB693;
