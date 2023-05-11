@@ -1,20 +1,28 @@
 @media (max-width:1280px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
-    width: 80%;
+   width: 100%;
+   max-width: 1250px;
   }
   .nav__item {
-   /* display: none;*/
+   display: none;
   }
   .burger-menu{
     display: inline-block;
     z-index: 2;
   }
+  .burger-menu :hover {
+    transform: all 0.2s ease;
+  }
   .burger-menu span {
     width: 100%;
     height: 10px;
-    background-color: #000;
+    background-color: #78e9be;
     position: absolute;
   }
+  
   .burger-menu span:nth-child(1) {
     top: 0;
   }
@@ -29,6 +37,9 @@
     opacity: 0;
     z-index: 3;
   }
+  input[type = checkbox]:hover {
+    transform: all 0.2s ease;
+  }
   input[type = checkbox]:checked ~ .burger-menu span {
     z-index: 2;
   }
@@ -37,7 +48,7 @@
   transition: background-color 1s linear;
 }
   input[type = checkbox]:checked ~ .burger-menu span {
-    background-color: #fff;
+    background-color: #d1fceb;
   }
   input[type = checkbox]:checked ~ .header__list {
     visibility: visible;
@@ -54,20 +65,187 @@
     transform: rotate(-45deg);
   }
   .nav__item {
-    z-index: 10;
+    z-index: 1;
     display: flex;
-    /*display: grid;
-    row-gap: 20px;
-    align-content: center;
-    justify-content: center;*/
+    flex-direction: column;
+    justify-content: center;
     width: 250px;
-    height: 1000px;
+    height: 800px;
     position: absolute;
-    right: 10px;
-    background-color: cadetblue;
-    font-size: 36px;
-    text-align: center;
-    visibility: hidden;
-    /*transition: right 1s, visibility 3s linear;*/
+    top: 5px;
+    right: 1px;
+    left: auto;
+    background-color: rgba(95, 158, 160, 0.5);
+    backdrop-filter: blur(16px);
+    border-left: 7px solid #fcfffca2;
+    /*text-align: center;
+    border-right: 2px solid #78e9be;
+    padding-right: 5px;
+    transition: all 0.2s ease;
+    right: -235px;
+    transition: all 0.2s ease;
+    overflow-x: hidden;*/
+
   }
+  .nav__item:hover {
+    right: 0;
+    transform: all 0.2s ease;
+  }
+  .basket {
+  margin-left: -20px;
+  }
+  .nav__item--link-menu:hover {
+    border-right: 2px solid #78e9be;
+    padding-right: 10px;
+    transition: all 0.2s ease;
+
+  }
+  .nav__item--link:nth-child(5) {
+    margin-right: 50px;
+  }
+  .header {
+    width: 100%;
+  }
+  .content {
+    height: 700px;
+  }
+.content__left {
+  top: -110px;
+  left: 150px;
+  height: 250px;
+}
+.content__right  {
+  top: 280px;
+  left: -515px;
+  height: 250px;
+}
+  .circle {
+    gap: 5px;
+    margin-left: 20px;
+  }
+  .vegetables__block {
+    gap: 5px;
+  }
+
+  .orang__button--right {
+    font-size: 15px;
+    border-radius: 20px;
+    padding-right: 0px;
+    width: 197px;
+    margin-left: 10px;
+    
+  }
+  .orang__button {
+    margin-left: 40px;
+
+    font-size: 15px;
+    width: 300px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .cards__one {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards__two {
+    margin-right: auto;
+  }
+  .cards__three {
+    margin-right: auto;
+  }
+}
+@media (max-width:1024px) {
+  .nav__item {
+    right: -230px;
+  }
+  
+.vegetables__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.advice {
+  height: 1000px;
+}
+.advice__title {
+  margin-top: 50px;
+}
+.circle {
+  margin-left: 100px;
+  gap: 10px;
+}
+.advice__circle {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+
+}
+.advice__circle--number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-top: 20px;
+}
+.adivice__circle--title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+.choice {
+  height: 100%;
+}
+
+.choice__block {
+  padding-top: 20px;
+
+}
+.choice__block--button  {
+  margin-right: 250px;
+}
+.choice__block--vegetables {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 10px;
+}
+.cards {
+  grid-template-columns: 1fr;
+  height: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+.cards__one {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cards__two {
+  margin-right: auto;
+}
+.cards__three {
+  margin-right: auto;
+}
+.orang__button {
+  
+  width: 250px;
+}
+}
+@media (max-width:960px) {
+
 }
