@@ -78,13 +78,13 @@
     background-color: rgba(95, 158, 160, 0.5);
     backdrop-filter: blur(16px);
     border-left: 7px solid #fcfffca2;
-    /*text-align: center;
+    text-align: center;
     border-right: 2px solid #78e9be;
     padding-right: 5px;
     transition: all 0.2s ease;
     right: -235px;
     transition: all 0.2s ease;
-    overflow-x: hidden;*/
+    overflow-x: hidden;
 
   }
   .nav__item:hover {
