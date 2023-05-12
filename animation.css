@@ -1,0 +1,38 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes figure {
+  from{
+background-color: #fff;
+  }
+  50%{
+background-color: aqua;
+transform: scale(1.2);
+border-radius: 100px;
+  }
+  to{
+background-color: #fff;
+  }
+}
+
+@keyframes wind {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle {
+  0% {
+
+  }
+  100% {
+    
+  }
+}

@@ -47,23 +47,13 @@ body {
   display: flex;
   margin-top: 48px;
 }
-.burger-menu {
-  position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 20px;
-    right: 10px;
-   display: none;
-  }
-  input[type = checkbox] {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 20px;
-    right: 10px;
-    z-index: 1;
-    display: none;
-  }  
+.nav__logo img:hover {
+  box-shadow: 13px 13px 7px #525C60;
+}
+#burger,
+[for=burger] {
+  display: none;
+}
 .nav__item {
   display: flex;
   flex-wrap: wrap;
@@ -156,6 +146,10 @@ margin-bottom: 250px;
 text-align: start;
 padding-left: 32px;
 }
+.header__button:hover {
+  background: #adb67e;
+  border-radius: 15px;
+}
 /**/
 .content {
   width: 100%;
@@ -170,6 +164,7 @@ padding-left: 32px;
   width: 100%;
   height: 100%;
   position: relative;
+  border: 2px solid #fff;
 }
 .content__left--title {
   font-family: 'Yellowtail';
@@ -197,12 +192,15 @@ padding-left: 32px;
   top: 170px;
   left: 55px;
 }
+
 .content__right {
   width: 100%;
   height: 100%;
   position: relative;
   left: 23px;
+  border: 2px solid #fff;
 }
+
 .content__right--title {
   font-family: 'Yellowtail';
   font-style: normal;
@@ -228,6 +226,10 @@ padding-left: 32px;
   z-index: 1;
   top: 170px;
   left: 55px;
+}
+.content__left:hover,
+.content__right:hover {
+  animation: figure 2s ease;
 }
 /**/
 .citrus {
@@ -328,6 +330,10 @@ padding-left: 32px;
   margin-top: 22px;
   margin-right: 5px;
 }
+.citrus__button:hover {
+  background: #7EB693;
+  border-radius: 15px;
+}
  /**/
  .vegetables {
   margin-top: 100px;
@@ -378,7 +384,14 @@ padding-left: 32px;
   padding-bottom: 20px;
   padding-left: 20px;
   margin-left: 10px;
-
+}
+.vegetables__block--one:hover,
+.vegetables__block-two:hover,
+.vegetables__block--three:hover,
+.vegetables__block--foor:hover,
+.vegetables__block--five:hover,
+.vegetables__block--six:hover {
+ animation: figure 3s linear;
 }
 .vegetables__block--foor,
 .vegetables__block--five,
@@ -571,6 +584,17 @@ padding-left: 32px;
   border: 6px solid #7EB693;
   border-radius: 200px;
   margin-top: 100px;
+  transition: border .5s linear;
+  animation: wind 0.5s ease;
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+
+}
+.advice__circle:hover {
+  border: 6px solid #7ee8ed;
+  transition: border .5s linear;
+  animation: wind 0.5s ease;*/
 }
 .circle {
   display: flex;
@@ -636,6 +660,10 @@ text-transform: capitalize;
 color: #274C5B;
 text-align: left;
 padding-left: 32px;
+}
+.choice__button:hover {
+  background: #d7fa29;
+  border-radius: 15px;
 }
 .choice__block--article-title {
 font-family: 'Yellowtail';
@@ -827,6 +855,11 @@ letter-spacing: 0.36px;
 color: #274C5B;
 margin-top: 245px;
 }
+.cards__button--one:hover,
+.cards__button--two:hover,
+.cards__button--three:hover {
+  box-shadow: 13px 13px 7px #525C60;
+}
 /**/
 .orang__block {
 width: 100%;
@@ -983,4 +1016,7 @@ color: #525C60;
 .map {
 width: 100%;
 height: 100vh;
+}
+.map__block {
+  width: 100%;
 }
