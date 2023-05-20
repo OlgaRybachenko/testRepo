@@ -924,7 +924,7 @@ body {
   margin-bottom: 95px;
 }
 .contact__contact {
-  padding: 10px;
+  padding-right: 10px;
 }
 .contact__contact--title {
   font-family: 'Roboto';
