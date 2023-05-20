@@ -10,11 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="exam.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="animation.css">
 </head>
 <body>
   <nav class="nav">
     <div class="container">
       <span class="nav__logo"><img src="./img(2)/IMAGE lo.png" alt="#"></span>
+      <input type="checkbox" id="burger">
+      <label for="burger"></label>
       <ul class="nav__item">
         <li class="nav__item--link"><a class="nav__item--link-menu" href="#">Home</a></li>
         <li class="nav__item--link"><a class="nav__item--link-menu" href="#">About Us</a></li>
@@ -51,7 +55,7 @@
     </div>  
   </div>
   <section class="citrus">
-    <div class="container">
+    <div class="container citrus__container">
     <div class="citrus__citrus">
     <div class="citrus__con">
       <h5 class="citrus__con--title">About Us</h5>
@@ -123,7 +127,7 @@
       <h5 class="advice__text">The quality of organic produce is extremely high, the service is second to none and the taste of the food <br>takes me back to my childhood when we were growing our own.</h5>
       <h3 class="advice__name">Sara Taylor</h3>
       <h6 class="advice__work">Consumer</h6>
-      <hr>
+      <hr class="advice__line">
       <div class="circle">
       <div class="advice__circle"><span class="advice__circle--number">100%</span><span class="adivice__circle--title">Organic</span></div>
       <div class="advice__circle"><span class="advice__circle--number">285</span><span class="adivice__circle--title">Active Product</span></div>
@@ -147,7 +151,7 @@
         <div class="vegetables__block--foor">
           <button class="vegetables__block--foor-button buttons">Vegetable</button>
           <img class="vegetables__image" src="./img(2)/IMAGE44.png" alt="#">
-          <h6 class="vegetables__block--text copy">Vegan Red Tomato</h6><hr>
+          <h6 class="vegetables__block--text copy text-foor">Vegan Red Tomato</h6><hr>
           <span class="vegetables__block--foor-span copy-price"><s class="not__price">$ 14.00 USD</s><i class="price">$ 9.37 USD</i><img class="star" src="./img(2)/IMAGE47.png" alt="#"> </span>
         </div>
         <div class="vegetables__block--five">
@@ -156,8 +160,8 @@
           <h6 class="vegetables__block--text copy">Organic Almonds</h6><hr>
           <span class="vegetables__block--five-span copy-price"><s class="not__price">$ 21.00 USD</s><i class="price">$ 18.00 USD</i><img class="star" src="./img(2)/IMAGE47.png" alt="#"> </span>
         </div>
-        <div class="vegetables__block-two">
-          <button class="vegetables__block--two-button buttons">Vegetable</button>
+        <div class="vegetables__block-two choice-two">
+          <button class="vegetables__block--two-button buttons choice-two-buttons">Vegetable</button>
           <img class="vegetables__image" src="./img(2)/IMAGE42.png" alt="#">
           <h6 class="vegetables__block--text copy">Fresh Corn</h6><hr>
           <span class="vegetables__block--two-span copy-price"><s class="not__price">$ 21.23 USD</s><i class="price">$ 18.00 USD</i><img class="star" src="./img(2)/IMAGE47.png" alt="#"> </span>
@@ -205,7 +209,7 @@
     <div class="contact__contact">
       <h3 class="contact__contact--title">Contact Us</h3>
       <p class="contact__contact--text">Email <br><a class="contact__contact--article" href="mailto:needhelp@organick.com">needhelp@organick.com</a></p>
-      <p class="contact__contact--text">Phone <br> <a class="contact__contact--article" href="tel:+123 (1254) 1452">123 (1254) 1452</a></p>
+      <p class="contact__contact--text">Phone <br> <a class="contact__contact--article phohe" href="tel:+123 (1254) 1452">123 (1254) 1452</a></p>
       <p class="contact__contact--text">Address</p>
       <p class="contact__contact--article">88 Road, Brooklyn Street, USA</p>
     </div>
@@ -231,9 +235,7 @@
   </div>
  </section>
  <footer class="map">
-  <div class="container">
     <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5972475.600415197!2d-100.24748823643172!3d44.75576435106457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1682872221101!5m2!1sru!2sby" width="1440" height="662" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
  </footer> 
 </body>
 </html>
