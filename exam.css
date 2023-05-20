@@ -157,11 +157,12 @@ body {
 }
 .content__block {
   padding: 0 0 130px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -5px;
 }
 .content__left {
-  width: 100%;
+  max-width: 600px;
   height: 100%;
   position: relative;
   border: 2px solid #fff;
@@ -193,10 +194,10 @@ body {
   left: 55px;
 }
 .content__right {
-  width: 100%;
+  max-width: 600px;
   height: 100%;
   position: relative;
-  left: 23px;
+  left: 112px;
   border: 2px solid #fff;
 }
 .content__right--title {
@@ -234,20 +235,20 @@ body {
   background-color: #F9F8F8;
   width: 100%;
   height: 100%;
-  padding: 180px 0 140px 20px;
+  padding: 180px 0 140px 0;
 }
 .citrus__citrus {
   height: 642px;
   background: url('../img(2)/citr.png') no-repeat, #f9f8f8;
   width: 100%;
   background-size: 50%, 50%;
-  margin-left: -20px;
   display: grid;
   grid-template: 1fr 1fr;
+  margin-left: -10px;
 }
 .citrus__con {
   margin-left: auto;
-  margin-top: -50px;
+  margin-top: -48px;
 }
 .citrus__con--title {
   font-family: 'Yellowtail';
@@ -288,7 +289,7 @@ body {
   line-height: 35px;
   letter-spacing: 0.36px;
   color: #274C5B;
-  margin-left: 122px;
+  margin-left: 120px;
   margin-top: -110px;
   margin-bottom: 10px;
 }
@@ -300,7 +301,7 @@ body {
   line-height: 32px;
   letter-spacing: 0.36px;
   color: #525C60;
-  margin-left: 122px;
+  margin-left: 120px;
   margin-bottom: 20px;
 }
 .citrus__con--article-image {
@@ -323,7 +324,7 @@ body {
   text-transform: capitalize;
   color: #fff;
   text-align: left;
-  padding-left: 35px;
+  padding-left: 32px;
   margin-top: 22px;
   margin-right: 5px;
 }
@@ -393,9 +394,8 @@ body {
 .vegetables__block--foor,
 .vegetables__block--five,
 .vegetables__block--six {
-  margin-top: 10px;
+  margin-top: 15px;
 }
-
 .vegetables__block--one-button,
 .vegetables__block--two-button,
 .vegetables__block--foor-button {
@@ -444,7 +444,6 @@ body {
   line-height: 27px;
   letter-spacing: 0.36px;
   margin-top: 35px;
-
 }
 .vegetables__block--text {
   font-family: 'Roboto';
@@ -500,7 +499,6 @@ body {
   margin-bottom: 50px;
   margin-left: -5px;
 }
-
 /**/
 .advice {
   width: 100%;
@@ -520,7 +518,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #7EB693;
-  margin-top: 115px;
+  margin-top: 110px;
 }
 .advice__article {
   font-family: 'Roboto';
@@ -574,6 +572,12 @@ body {
   color: #525C60;
   margin-bottom: 95px;
 }
+.advice__line {
+  margin-left: 20px;
+  width: 80%;
+  height: 2px;
+  background: #E0E0E0;
+}
 .advice__circle {
   width: 250px;
   height: 250px;
@@ -586,7 +590,6 @@ body {
   animation-name: circle;
   animation-duration: 2s;
   animation-timing-function: linear;
-
 }
 .advice__circle:hover {
   border: 6px solid #7ee8ed;
@@ -629,11 +632,11 @@ body {
 .choice {
   background-color: #274C5B;
   width: 100%;
-  height: 1060px;
+  height: 1055px;
 }
 .choice__block {
   display: flex;
-  padding-top: 140px;
+  padding-top: 135px;
   margin-bottom: 65px;
 }
 .choice__block--button {
@@ -687,11 +690,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  margin-top: -30px;
+  margin-top: -35px;
   margin-left: -10px;
 }
 .choice-two {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .buttons {
   margin-left: 10px;
@@ -703,9 +706,8 @@ body {
 .copy-price {
   margin-left: 10px;
   padding-bottom: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-
 /**/
 .scenery {
   width: 100%;
@@ -723,7 +725,7 @@ body {
   padding: 60px;
   margin-left: auto;
   margin-right: 30px;
-  margin-top: -15px;
+  margin-top: -5px;
 } 
 .scenery__block--last{
   font-family: 'Yellowtail';
@@ -734,7 +736,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #7EB693;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 .scenery__block--article{
   font-family: 'Roboto';
@@ -893,6 +895,7 @@ body {
   color: #525C60;
   margin-left: 350px;
   padding-right: 70px;
+  animation: circle 3s linear;
 }
 .orang__button--right {
   width: 197px;
@@ -909,6 +912,9 @@ body {
   margin-left: auto;
   margin-right: 80px;
   padding-right: 35px;
+}
+.orang__button--right:hover {
+  background: #7ee8ed;
 }
 /**/
 .contact__block {
@@ -929,6 +935,7 @@ body {
   text-align: right;
   letter-spacing: 0.36px;
   color: #274C5B;
+  margin-top: 10px;
 }
 .contact__contact--text {
   font-family: 'Open Sans';
@@ -939,7 +946,6 @@ body {
   text-align: right;
   letter-spacing: 0.36px;
   color: #525C60;
-  margin-bottom: 10px;
   margin-top: 40px;
 }
 .contact__contact--article {
@@ -951,6 +957,11 @@ body {
   text-align: right;
   letter-spacing: 0.36px;
   color: #525C60;
+  margin-top: 8px;
+}
+.phone {
+  font-size: 17px;
+  line-height: 35px;
 }
 .contact__contact--social {
   padding: 10px;
@@ -973,7 +984,7 @@ body {
   text-align: center;
   letter-spacing: 0.36px;
   color: #525C60;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 .contact__contact--social-image {
   text-align: center;
